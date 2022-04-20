@@ -1,0 +1,32 @@
+[
+    {
+        "nombre":"brochero",
+        "precio":890,
+        "stock":4,
+        "vendido":false
+    },
+    {
+        "nombre":"cartera",
+        "precio":1990,
+        "stock":0,
+        "vendido":false
+    },
+    {
+        "nombre":"mochila",
+        "precio":1990,
+        "stock":0,
+        "vendido":false
+    },
+    {
+        "nombre":"neceser",
+        "precio":1290,
+        "stock":5,
+        "vendido":false
+    },
+    {
+        "nombre":"portatodo",
+        "precio":1490,
+        "stock":2,
+        "vendido":false
+    }
+]

@@ -1,0 +1,50 @@
+%fondo-principal{
+    background-color: $bg-principal;
+}
+
+%fondo-hf{
+    background-color: $bg-hf;
+}
+
+%hover-general{
+    color: $hover-principal !important;
+}
+
+%link-general{
+    color:$color-fuente-principal;
+}
+
+%margin5{
+    margin: 5px;
+}
+
+%scale125{
+    transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    -moz-transform: scale(1.25);
+    -o-transform: scale(1.25);
+}
+
+%transition-general{
+    transition: all 500ms ease-out;
+}
+
+%box-shadow-negra{
+    box-shadow: -1px -1px 12px 1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -1px -1px 12px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px -1px 12px 1px rgba(0,0,0,0.75);
+    -o-box-shadow: -1px -1px 12px 1px rgba(0,0,0,0.75);
+}
+%fondo-alarakha{
+    background-image: url('../multimedia/images/general/fondo-1.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+%formato-texto-general{
+    text-align: center;
+    margin: 2rem auto;
+}
+%padding-hf{
+    padding: 0.5em;
+}

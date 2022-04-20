@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Meta etiqueta description y kw | Entre 70 a 320 caracteres -->
+    <meta name="description" content="Acá podés ver y adquirir nuestros brocheros, neceseres, carteras, bolsos y mucho más con un estilo único, creativo y con amor">
+
+
+    <!-- Meta kw | 18 palabras es lo ideal -->
+    <meta name="keywords" content="alarakha, catalogo, productos, brocheros, neceseres, carteras, bolsos, monederos, estilo, moda, creatividad, amor, diseño, maquillajes">
+
+
+    <!-- Protocolo open graph | Para definir cómo se muestra mi sitio en redes sociales -->
+    <meta property="og:tittle" content="Alarakha | hecho • con • amor">
+    <meta property="og:url" content="https://alarakha-neceseres.000webhostapp.com/index.html">
+    <meta property="og:image" content="https://alarakha-neceseres.000webhostapp.com/src/multimedia/images/general/logo.png">
+    <meta property="og:description" content="Acá podés ver y adquirir nuestros brocheros, neceseres, carteras, bolsos y mucho más con un estilo único, creativo y con amor">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        
+
+    <!-- Css -->
+    <link rel="stylesheet" href="../css/style.css">   
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"> 
+
+
+    <!-- Iconos -->
+    <script src="https://kit.fontawesome.com/01c9b60a99.js" crossorigin="anonymous"></script>
+    
+
+    <!-- Animaciones -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+
+    <title>Alarakha Neceseres | Catálogo</title>
+</head>
+<body>
+
+
+    <!-- Header -->
+    <header id="Header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-leo">
+        <div class="container-fluid d-flex justify-content-between">
+          <a class="animate__animated animate__bounce navbar-brand navbar__logo" href="../../index.html"><img src="../multimedia/images/general/logo.png" alt="logo-Alarakha" class="w-100"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Catálogo
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#brochero">Brocheros</a></li>
+                  <li><a class="dropdown-item" href="#cartera">Carteras</a></li>
+                  <li><a class="dropdown-item" href="#mochila">Mochilas</a></li>
+                  <li><a class="dropdown-item" href="#neceser">Neceseres</a></li>
+                  <li><a class="dropdown-item" href="#portatodo">Portatodo</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Ver todo</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tienda.html#medios">Medios de pago</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="tienda.html#ventaspm">Ventas al por mayor</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.instagram.com/stories/highlights/17909957731855954/" target="_blank"><i class="fab fa-instagram"></i> InstaTips</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Carrito
+                </a>
+                <ul id="lista-carrito" class="dropdown-menu navbarDropdown-carrito" aria-labelledby="navbarDropdown">
+                </ul>
+                <li class="nav-item">
+                  <a class="nav-link" id="vaciarCarrito" href="#">Vaciar Carrito</a>
+                </li>
+            </ul>
+            <!-- <form class="ms-auto d-flex">
+              <input class="form-control me-2" type="search" placeholder="¿Qué necesitas?" aria-label="Search">
+              <button class="btn btn-outline-dark" type="submit">Buscar</button>
+            </form> -->
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Fin de Header -->
+
+
+    <!-- Título -->
+    <div class="ancla">
+        <h1 id="Title">Catalogo</h1>
+    </div>
+    <!-- Fin de título -->
+
+    
+    <!-- Sección de productos -->
+  <div id="carrito"></div>
+  <div id="main">
+  <div class="ancla" id="brochero">
+      <h2 class="mt-5 mb-5">Brocheros</h2>
+      <div class="productos__container">
+        <div class="productos__container__item">
+            <img src="../multimedia/images/brocheros/brochero-tubo-star.jpg" alt="Brochero-Tubo-Star">
+            <p>Tubo-Star</p>
+            <p class="productos__container__item__precio">$890</p>
+            <button class="productos__container__item__button-general"><a class="agregarCarrito">Lo quiero!</a></button>
+        </div>
+      </div>
+    </div>
+    <div class="ancla" id="cartera">
+      <h2 class="mt-5 mb-5">Carteras</h2>
+      <div class="productos__container">
+        <div class="productos__container__item">
+            <img src="../multimedia/images/carteras/cartera-caveira.jpg" alt="Cartera-Caveira">
+              <p>Caveira</p>
+              <p class="productos__container__item__precio">$1990</p>
+              <button class="productos__container__item__button-general"><a class="agregarCarrito">Lo quiero!</a></button>
+        </div>
+      </div>
+    </div>
+    <div class="ancla" id="mochila">
+      <h2 class="mt-5 mb-5">Mochilas</h2>
+      <div class="productos__container">
+        <div class="productos__container__item">
+          <img src="../multimedia/images/mochilas/mochila.jpg" alt="Mochila-Alarakha">
+            <p>Alarakha</p>
+            <p class="productos__container__item__precio">$1990</p>
+            <button class="productos__container__item__button-general"><a class="agregarCarrito">Lo quiero!</a></button>
+        </div>
+      </div>
+    </div>
+    <div class="ancla" id="neceser">
+      <h2 class="mt-5 mb-5">Neceseres</h2>
+      <div class="productos__container">
+        <div class="productos__container__item">
+          <img src="../multimedia/images/neceseres/neceser-mamushka.jpg" alt="Neceser-Mamushka">
+          <p>Mamushka</p>
+          <p class="productos__container__item__precio">$1290</p>
+          <button class="productos__container__item__button-general"><a class="agregarCarrito">Lo quiero!</a></button>
+          <p>Combo Varias medidas!</p>
+        </div>
+      </div>
+    </div>
+    <div class="ancla" id="portatodo">
+      <h2 class="mt-5 mb-5">Portatodo</h2>
+      <div class="productos__container">
+        <div class="productos__container__item">
+            <img src="../multimedia/images/portatodo/portatuti.jpg" alt="Portatuti">
+              <p>Portatuti</p>
+              <p class="productos__container__item__precio">$1490</p>
+              <button class="productos__container__item__button-general"><a class="agregarCarrito">Lo quiero!</a></button>
+              <p>Si! Entra tu celular!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Fin de sección de productos -->
+
+  <!-- Sección elegir medios y calcular -->
+    <br>
+    <br>
+    <br>
+    <div id="opciones">
+    <select class="mt-3 mb-3 ms-3" id="mediosDP" name="medios">
+        <option selected>---Seleccione método de pago---</option>
+        <option value="efectivo">Efectivo</option>
+        <option value="cuotas">Cuotas</option>
+    </select>
+    <select class="mt-3 mb-3 ms-3 d-none" id="cuotas" name="cuotas">
+        <option selected>---Seleccione cantidad de cuotas---</option>
+        <option value=3>3</option>
+        <option value=6>6</option>
+        <option value=12>12</option>
+    </select>
+    <div class="mt-3 mb-3 ms-3" id="comprar">
+        <button id="btnCalcularCompra" class="d-none productos__container__item__button-general">Calcular Compra</button>
+    </div>
+    </div>
+  <!-- Fin de sección elegir medios y calcular -->
+
+
+    <!-- Inicio de footer -->
+    <footer>
+      <div class="menu__footer">
+            <!--Sección sobre la tienda-->
+            <nav class="menu__footer__item">
+            <h6 class="menu__footer__item__title fs-5">Tienda</h4>
+            <ul class="m-0 mb-4 p-0">
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="tienda.html#medios">Medios de Pago</a></li>
+                <li><a href="tienda.html#cambiosDev"> Cambios y devoluciones</li></a>
+                <li><a href="tienda.html#envios"> Sobre envíos</li></a>
+            </ul>
+            </nav>
+            <!--Fin de Sección sobre la tienda-->
+
+
+            <!--Sección Sobre Nosotros-->
+            <nav class="menu__footer__item">
+            <h6 class="menu__footer__item__title fs-5">Sobre Nosotros</h4>
+            <ul class="m-0 mb-4 p-0">
+                <li><a href="nosotros.html#Alarakha">Nuestra Historia</a></li>
+                <li><a href="nosotros.html#sobreMi">Bio</a></li>
+                <li><a href="nosotros.html#materiaPrima">Producción</a></li>
+            </ul>
+            </nav>
+            <!--Fin de Sección Sobre Nosotros-->
+
+            
+            <!--Sección Redes Sociales y contacto-->
+            <nav class="menu__footer__item menu__footer__item--redes">
+            <div>
+            <!--Botón de Instagram-->
+            <a class="display-5 mb-0" href="https://www.instagram.com/alarakha.neceseres/" target="_blank"><i class="fab fa-instagram menu__footer__item__iconos"></i></a>
+            <!--Botón de Facebook-->
+            <a class="display-5 mb-0" href="https://www.facebook.com/alarakhaneceseres" target="_blank"><i class="fab fa-facebook menu__footer__item__iconos"></i></a>
+            </div>
+            <nav class="menu__footer__item--contacto">
+              <!-- Botón de Enviar Correo -->
+              <a href="mailto:alarakha.neceseres@hotmail.com"><i class="fas fa-at"></i></a>
+              <!-- Botón de Ubicación -->
+              <a href="https://www.google.com/maps/place/Caseros,+Provincia+de+Buenos+Aires/@-34.6097924,-58.5811922,14z/data=!3m1!4b1!4m5!3m4!1s0x95bcb8698cab7fa3:0xc4d83fe138c75b6f!8m2!3d-34.6094827!4d-58.5634631" target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+              <!-- Botón de Enviar WhatsApp -->
+              <a href="https://wa.me/+5491162488937?text=Hola,%20quería%20consultar%20por%20" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            </nav>
+            </nav>
+            <!-- Fin de Sección Redes Sociales y contacto -->
+
+
+            <!-- Botón subir a inicio -->
+            <a class="menu__footer__item--flecha-header" data-aos="fade-up" href="#"><i class="fas fa-arrow-circle-up fs-2"></i></a>
+      </div>
+            <!-- Fin de botón para subir a inicio -->
+      <nav>
+        <img class="footer__logo" src="../multimedia/images/general/logo.png" alt="logo-Alarakha">
+        <p class="footer__copyrigth mb-0">Copyright Alarakha - 2021. Todos los derechos reservados</p>
+      </nav>
+    </footer>
+    <!-- Fin de footer -->
+
+
+    <!-- Link Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+
+    <!-- Link Animaciones -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+    <script src="../../js/funciones.js"></script>
+    <script src="../../js/carga.js"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/events.js"></script>
+</body>
+</html>

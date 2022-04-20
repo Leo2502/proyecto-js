@@ -1,0 +1,61 @@
+/* Edición de header */
+header{
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    @extend %padding-hf;
+    @extend %fondo-hf;
+    .bg-leo{
+        @extend %fondo-hf;
+    }
+    .navbar{
+        font-family: $fuente-principal;
+        font-weight: bolder;
+        @media screen and (max-width:960px){
+            height: auto;
+        }
+        height: 12vh;
+        .navbar__logo{
+            @media screen and (max-width:480px){
+                width: 40%;
+            }
+            @media screen and (min-width:481px) and (max-width:960px){
+                width: 22%;
+            }
+            width: 13%;
+        }
+            li{
+                margin:0.9em;
+                .dropdown-menu{
+                    @extend %fondo-hf;
+                    border-radius: 0.4em;
+                    border-top: none;
+                    .dropdown-item:hover{
+                        @extend %hover-general;
+                    }
+                }
+            }
+            .nav-item{
+                text-decoration: none;
+                @extend %transition-general;
+                .nav-link{
+                    @extend %link-general;
+                    background: linear-gradient(currentColor 0 0) bottom /var(--d, 0) 2px no-repeat;
+                    @extend %transition-general;
+                    &:visited{
+                        @extend %link-general;
+                    }
+                    &:active{
+                        color:white;
+                        background-color: black;
+                        @extend %transition-general;
+                    }
+                    &:hover{
+                        @extend %hover-general;
+                        --d:100%;
+                    }
+                }
+            } 
+    }
+}
+/* Fin de Edición de Header */

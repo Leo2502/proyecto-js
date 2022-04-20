@@ -1,0 +1,103 @@
+/* Edición General */
+body{
+    @extend %fondo-principal;
+    font-family: $fuente-principal;
+    a{
+        text-decoration: none;
+        @extend %link-general;
+        font-weight: normal;
+        &:hover{
+            @extend %hover-general;
+            @extend %transition-general;
+        }
+    }
+}
+
+/* Edición de botón de formulario */
+
+/* Fin de edición de botón de formulario */
+
+/*Edición en body*/
+.ventaspm{
+    @include flexbox(flex, row nowrap, center);
+    margin-bottom: 0.8em;
+    @extend %fondo-principal;
+}
+.contactos__container{
+    @include flexbox(flex, row wrap, space-around);
+    flex:1;
+    @media screen and (max-width:480px){
+        @include flexbox(flex, column wrap, space-around);
+    }
+    .contactos__container__item{
+        @include flexbox(flex, column wrap, flex-start);
+        align-items: center;
+        h3{
+            padding: 0.25em 0.5em;
+            background: linear-gradient(black 0 0) top /100% 5% no-repeat,
+            linear-gradient(black 0 0) bottom /100% 5% no-repeat,
+            linear-gradient(black 0 0) left /var(--d,0%) 100% no-repeat;
+            @extend %transition-general;
+        }
+        &:hover{
+            h3{
+            color:white;
+            --d:100%;
+            @extend %transition-general;
+            }
+        }
+        .contactos__container__item__form{
+            display: flex;
+            flex-flow: column nowrap;
+            form{
+                margin: 0.8em;
+                .contactos__container__item__form__button {
+                    color:$bg-principal;
+                    margin: 1em;
+                    padding: 1em;
+                    border: solid 1px $bg-principal;
+                    border-radius: 2em;
+                    background-color: black;
+                    font-size: 0.8em;
+                    &:hover{
+                        background-color: rgb(34, 34, 34);
+                        border: solid 1px $bg-principal;
+                        border-radius: 1.25em;
+                        @extend %transition-general;
+                        color:$hover-principal;
+                    }
+                }
+            }
+            .contactos__container__item__form__input{
+                display: flex;
+                align-self: flex-end;
+            }
+        }
+        li{
+            overflow: hidden;
+        }
+    }
+    .contactos__container__item--ubicacion{
+    flex-grow: calc(0.75);
+        .contactos__container__item__map:hover{
+            transform: scale(1.10);
+            @extend %box-shadow-negra;
+            @extend %transition-general;
+        }
+    }
+}
+
+.fa-cart-arrow-down:hover{
+    @extend %scale125;
+    @extend %transition-general;
+}
+
+/*Arreglo de anclaje de enlaces respecto al header sticky*/
+.ancla::before{
+    display: block;
+    content: " ";
+    margin-top: -5.5em;
+    height: 5.5em;
+    visibility: hidden;
+}
+/* Fin de edición general en body */

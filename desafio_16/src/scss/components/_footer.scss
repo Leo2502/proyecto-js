@@ -1,0 +1,88 @@
+/* Edición de footer */
+footer{
+    margin-top: 2rem;
+    @extend %padding-hf;
+    @extend %fondo-hf;
+    font-size: 1rem;
+    .menu__footer{
+        @media screen and (max-width:480px){
+            @include flexbox(flex, column wrap, space-around);
+        }
+        @include flexbox(flex, row nowrap, space-between);
+        .menu__footer__item{
+            @include flexbox(flex, column wrap, flex-start);
+            align-content: space-between;
+            flex:1;
+            margin: 0.75em;
+            overflow: hidden;
+            font-weight: bolder;
+            .menu__footer__item__title{
+                margin: 0.8em 0;
+                font-weight: bolder;
+                text-transform:uppercase;
+                text-align: left;
+                font-size: 1.5em;
+            }
+            ul{
+                margin: 0 0 1.25em 1.25em;
+                list-style: none;
+                li {
+                    margin: 0.6em;
+                }
+            }
+        }
+        .menu__footer__item--redes{
+            justify-content: space-between;
+            align-items:center;
+            .menu__footer__item__iconos{
+                padding: 0.6em;
+                @extend %transition-general;
+                &:hover{
+                    @extend %scale125;
+                }
+            }
+            .fa-map-marker-alt:hover{
+                @extend %scale125;
+            }
+        }
+        .menu__footer__item--contacto{
+            @media screen and (max-width:480px){
+                display:none;
+            }
+            i{
+                margin: 0.5em;
+                &:hover{
+                    @extend %scale125;
+                    @extend %transition-general;
+                }
+            }
+        }
+        // Edición de botón para subir a inicio
+        .menu__footer__item--flecha-header{
+            /* Edición de botón para subir a inicio */
+            position: fixed;
+            right: 1%;
+            bottom: 1%;
+            padding: 1em;
+            @extend %hover-general;
+            @extend %transition-general;
+            z-index: 2;
+            &:visited{
+                @extend %hover-general;
+            }
+            .fa-arrow-circle-up{
+                width: 30%;
+            /* Fin de edición de botón para subir a inicio */
+            }
+        }
+        // Fin de edición de botón para subir a inicio
+    }
+    .footer__logo{
+        @media screen and (max-width:480px){
+            width: 40%;
+            margin-top:1em;
+        }
+        width: 13%;
+    }
+}
+/* Fin de edición de footer */

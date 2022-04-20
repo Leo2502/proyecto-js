@@ -1,0 +1,143 @@
+/* Edición de Multimedia */
+.portada-desktop{
+    height: 100vh;
+    .portada-desktop__fondo{
+        height: 100%;
+        background-image: url('../multimedia/images/general/portada-d.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+}
+.atencion{
+    @include flexbox(flex, column wrap, center);
+    align-items: center;
+    margin: 0.5em;
+    img{
+        @media screen and (max-width:480px){
+            width: 75%;
+        }
+        width: 30%;
+    }
+    p{
+        @media screen and (max-width:480px){
+            font-size: 0.8em;
+        }
+        text-align: center;
+    }
+}
+/* Edición de productos */
+.productos__container{
+    @media screen and (max-width:480px){
+        @include flexbox(flex, column wrap, space-around);
+    }
+    @include flexbox(flex, row wrap, space-around);
+    margin: 0.1em;
+    .productos__container__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0.1em auto 0.5em auto;
+        padding: 0.5em;
+        overflow: hidden;
+        @media screen and (max-width:480px){
+            width: 100%;
+        }
+        width: 23%;
+        img{
+            width: 100%;
+            @media screen and (max-width:480px){
+                height: auto;
+                filter:none;
+            }
+            // height: 45vh;
+            @extend %margin5;
+            filter: grayscale(60%);
+            &:hover{
+                @extend %box-shadow-negra;
+                @extend %transition-general;
+                filter: none;
+            }
+        }
+        p{
+            @extend %margin5;
+            text-transform: uppercase;
+        }
+        .productos__container__item__precio{
+            font-weight: bolder;
+            color:$color-fuente-principal;
+        }
+        .productos__container__item__button-general {
+            margin: 1em;
+            padding: 1em;
+            border: solid 1px white !important;
+            border-radius: map-get($stock,br-stock);
+            background-color: map-get($stock,bg-stock);
+            font-size: map-get($stock,font-stock);
+            &:hover{
+                background-color: map-get($hover-stock,bg-hstock);
+                border: solid 1px white;
+                border-radius: 1.25em;
+                @extend %transition-general;
+            }
+            a{
+                @extend %margin5;
+                color: white;
+            }
+        }
+        
+        }
+    .productos__container__item--sin-stock{
+        img:hover{
+            filter: grayscale(60%);
+        }
+        .productos__container__item__precio{
+            display: none;
+        }
+        .productos__container__item__button-general{
+            margin: 1em;
+            margin-top: 3.5em;
+            padding: 1em;
+            color:white;
+            border: solid 1px white !important;
+            background-color: map-get($sin-stock,bg-sstock !important);
+            font-size: map-get($sin-stock,font-sstock);
+            &:hover{
+                background-color:map-get($hover-sin-stock,bg-hsstock);
+                border: solid 1px white;
+                border-radius: 1.25em;
+                @extend %transition-general;
+            }
+            a{
+                @extend %margin5;
+                color: white;
+                &:hover{
+                    color: white;
+                }
+            }
+    }
+    }
+}
+.container-fluid__row__producto{
+    overflow: hidden;
+    :hover img{
+        transform: scale(1.15);
+        -webkit-transform:scale(1.15);
+    }
+    img:hover{
+            filter: brightness(125%);
+            @extend %transition-general;
+    }
+}
+.foto-bio{
+    @media screen and (max-width:480px){
+        width: 50%;
+    }
+    @media screen and (min-width:481px) and (max-width:960px){
+        width: 30%;
+    }
+    width: 25%;
+}
+/* Fin de edición de productos */
+/* Fin de edición de multimedia */

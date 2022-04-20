@@ -1,0 +1,50 @@
+/* Edición de texto */
+h1{
+    text-align: center;
+    font-family: AmaticSC-Regular;
+    font-weight: bolder;
+    @extend %fondo-alarakha;
+    @media screen and (max-width:480px){
+        font-size: 3em;
+    }
+    font-size: 4em;
+    color:$color-fuente-principal !important;
+}
+h2{
+    @extend %formato-texto-general;
+    @extend %fondo-alarakha;
+    border-radius: 0.3em;
+    color:$color-fuente-principal !important;
+}
+h3{
+    @extend %formato-texto-general;
+    padding:0.2em;
+}
+.nstext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.presentacion{
+    @extend %formato-texto-general;
+    color:$color-fuente-principal;
+    font-size: 1.25em;
+    @media screen and (max-width:480px){
+        width: 90%;
+    }
+    width: 50%;
+}
+.texto-comun{
+    text-align:justify;
+    margin: 2em auto;
+    font-weight:unset;
+    width: 75%;
+}
+.footer__copyrigth{
+    font-size: 0.75em;
+}
+.medios-item{
+    margin: 3em;
+}
+
+/* Fin de edición de texto */
