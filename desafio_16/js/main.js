@@ -21,7 +21,7 @@ let carrito = [];
 
 let carritoGuardado = localStorage.getItem("Carrito");
 
-// Si hay datos en storage, se actualizan las arrays. Aplicamos operador OR
+// Si hay datos en storage, se actualizan las arrays. Aplicamos operador OR.
 
 // carrito = JSON.parse(localStorage.getItem("Carrito")) || [];
 
